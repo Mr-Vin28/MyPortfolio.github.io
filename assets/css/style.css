@@ -123,6 +123,49 @@ img {
     }
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .row.pb-4 {
+        text-align: center;
+    }
+
+    .col-lg-8 {
+        margin-bottom: 20px;
+    }
+
+    .card-custom-content p {
+        display: none; /* Hide the description on mobile */
+    }
+
+    .card-custom {
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        font-size: 24px; /* Adjust heading size for mobile */
+        text-align: justify;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .card-custom-content p {
+        display: block;
+    }
+
+    h4 {
+        font-size: 28px; /* Adjust heading size for tablets */
+        text-align: justify;
+    }
+}
+
 /* BTN */
 .btn {
     padding: 12px 28px;
