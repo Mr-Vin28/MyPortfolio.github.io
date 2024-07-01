@@ -20,7 +20,14 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             var info = this.getAttribute('data-info');
             var img = this.getAttribute('data-img');
-            modalImg.src = img;
+            
+            if (img) {
+                modalImg.src = img;
+                modalImg.style.display = 'block';
+            } else {
+                modalImg.style.display = 'none';
+            }
+
             modalInfo.textContent = info;
             modal.classList.add('show'); // Add class to show modal with transition
         };
